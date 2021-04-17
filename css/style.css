@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--container-bg-color: hsl(204, 43%, 93%);
+	--cyan-color: hsl(179, 62%, 43%);
+	--bright-yellow-color: hsl(71, 73%, 54%);
+	--light-gray-color: hsl(204, 43%, 93%);
+	--grayish-blue-color: hsl(218, 22%, 67%);
+}
+
+/* Main container style */
+#main-container {
+	background-color: var(--container-bg-color);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Grid container style */
+#grid-container {
+	border-radius: 10px;
+	background-color: hsl(0, 0%, 100%);
+	width: 55%;
+	height: 70%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+#grid1 {
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+
+#grid2 {
+	background-color: var(--cyan-color);
+	border-bottom-left-radius: 10px;
+}
+
+#grid3 {
+	background-color: hsl(179, 62%, 47%);
+	border-bottom-right-radius: 10px;
+}
+
+
+/* Grid 1 content style */
+#grid1 h1 {
+	color: var(--cyan-color);
+	padding: 2rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+#grid1 h3 {
+	color: var(--bright-yellow-color);
+	padding: 1rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+#grid1 p {
+	color: var(--grayish-blue-color);
+	padding: 1rem 2rem 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+}
+
+/* Grid 2 content style */
+#grid2 h4 {
+	color: hsl(0, 0%, 100%);
+	padding: 2rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+#grid2 h1 {
+	color: hsl(0, 0%, 100%);
+	padding: 1rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+#grid2 h1 span:nth-of-type(2) {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--light-gray-color);
+}
+
+#grid2 p {
+	color: hsl(0, 0%, 100%);
+	padding: 1rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+}
+
+#grid2 button {
+	width: 65%;
+	height: 40px;
+	margin: 1rem 2rem 0 2rem;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--bright-yellow-color);
+	color: hsl(0, 0%, 100%);
+	cursor: pointer;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+/* Grid 3 content style */
+
+#grid3 h4 {
+	color: hsl(0, 0%, 100%);
+	padding: 2rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+}
+
+#grid3 p {
+	color: var(--light-gray-color);
+	padding: 1rem 0 0 2rem;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+}
